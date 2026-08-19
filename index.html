@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION NOVA</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./pictures/monox studios blue.png" alt="Monox Studios logo" class="navbar-logo">
+                <span>FASHION NOVA</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="modal fade" tabindex="1" id="booking-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Select outfit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row g-2">
+                                <div class="col-sm-6">
+                                    <div class=" form-floating">
+                                        <input id="email" type="email" class="form-control"
+                                            placeholder="Your Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 bg">
+                                    <div class="form-floating">
+                                        <select name="select" id="form-select">
+                                            <option value="">IseAgu 1</option>
+                                            <option value="">Kaftan 2</option>
+                                            <option value="">Agbada</option>
+                                        </select>
+                                        <label for="form-select">Select Outfit</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">checkout</button>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="./pictures/African gown outfit inspiration.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-4">
+                        <h1 class="display-1 fw-bold text-uppercase">FASHION NOVA</h1>
+                        <p class="fs-3 mt-5 text-capitalize">Discover more.</p>
+
+                        <button class="btn btn-primary px-4 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">order now</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./pictures/Agbada styles for men.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-4">
+                        <h1 class="display-1 fw-bold text-uppercase">FASHION NOVA</h1>
+                        <p class="fs-3 mt-5 text-capitalize">Discover more.</p>
+
+                        <button class="btn btn-primary px-4 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">order now</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./pictures/2462974793696048.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-4">
+                        <h1 class="display-1 fw-bold text-uppercase">FASHION NOVA</h1>
+                        <p class="fs-3 mt-5 text-capitalize">Discover more.</p>
+
+                        <button class="btn btn-primary px-4 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">order now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="icon-selection">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100 text center fs-4">
+                    <div class="col-xl">
+                        <i class="bi bi-file-person me-2"></i>
+                        amazing outfits
+                    </div>
+                    <div class="col-xl">
+                        <i class="bi bi-truck me-2"></i>
+                        fast delivery
+                    </div>
+                    <div class="col-xl">
+                        <i class="bi bi-patch-check-fill me-2"></i>
+                        24/7 support
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="packages" class="pt-5">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card">
+                        <img src="./pictures/They didn’t come to play_ The BBNaija stars really….jpg"
+                        class="card-img-top"
+                         alt="...">
+                         <div class="card-body">
+                             <h5 class="card-title fs-5">Card Title</h5>
+                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                             <a href="#" class="btn btn-primary">Go somewhere</a>
+                         </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg">
+                    <div class="card">
+                        <img src="./pictures/Royal African Menswear, Custom Made Groom Suit, Nigerian Wedding Outfit.jpg"
+                        class="card-img-top"
+                         alt="...">
+                         <div class="card-body">
+                             <h5 class="card-title fs-5">Card Title</h5>
+                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                             <a href="#" class="btn btn-primary">Go somewhere</a>
+                         </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg">
+                    <div class="card">
+                        <img src="./pictures/OLAWONUOLA & OLAITAN  —————————————————————….jpg"
+                        class="card-img-top"
+                         alt="...">
+                         <div class="card-body">
+                             <h5 class="card-title fs-5">Card Title</h5>
+                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                             <a href="#" class="btn btn-primary">Go somewhere</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="py-md-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Fashion Nova?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Fashion Nova is a leading fashion brand that offers trendy and affordable clothing for
+                                men and women. We specialize in providing stylish outfits that cater to various occasions, ensuring our customers look their best.
+                                <a href="tel:+234 80 000 0000">+234 80 000 0000</a> or email us at <a href="mailto:info@fashionnova.com">info@fashionnova.com</a>
+
+                            </div>
+                
+                </div>
+            </div> 
+            <div class=" accordion-item">
+                <h2 class="accordian-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I place an order?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" 
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Placing an order with Fashion Nova is simple and convenient.
+                         You can browse our collection on our website, select the items you like,
+                         and proceed to checkout. If you have any questions or need assistance,
+                         feel free to contact us.
+                         
+                         <ul>
+                            <li>Visit our website and browse our collection.</li>
+                            <li>Select the items you like and add them to your cart.</li>
+                            <li>Proceed to checkout and enter your shipping and payment information.</li>
+                            <li>Review your order and submit it.</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="bg-dark py-5 mt-5">
+            <p class=" display-5 mb-3"> fashion nova</p>
+            <p class="text-white-50 text-center">Copyright &copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
